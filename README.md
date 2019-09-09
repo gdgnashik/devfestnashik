@@ -1,6 +1,6 @@
 # gdg_nashik
 
-A GDG Nashik Flutter App
+DevFest Application on Flutter 
 
 ## Getting Started
 
