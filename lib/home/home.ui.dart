@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gdg_nashik/speakers/model/speaker.model.dart';
+import 'package:gdg_nashik/speakers/widgets/speaker.item.dart';
 
 class HomeUi extends StatefulWidget {
   @override
@@ -47,10 +48,9 @@ class _HomeUiState extends State<HomeUi> {
 
   List<SpeakerModel> speakers = [
     SpeakerModel(
-        imagePath: "assets/userImages/man1.jpg",
-        name: "Vivek",
-        specializedIn: "Fluit"
-            "ter"),
+        imagePath: "assets/userImages/member_287052152.jpeg",
+        name: "Sagar",
+        specializedIn: "GCP"),
     SpeakerModel(
         imagePath: "assets/userImages/man1.jpg",
         name: "Vivek",
@@ -151,25 +151,7 @@ class _HomeUiState extends State<HomeUi> {
                   scrollDirection: Axis.horizontal,
                   itemCount: speakers.length,
                   itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Column(
-                        children: <Widget>[
-                          Image.asset(
-                            speakers[index].imagePath,
-                            height: 100,
-                          ),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Text(speakers[index].name),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(speakers[index].specializedIn)
-                        ],
-                      ),
-                    );
+                    return SpeakerItem(speakers[index]);
                   },
                 ),
               )

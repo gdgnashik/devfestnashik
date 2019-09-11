@@ -1,0 +1,5 @@
+class HomeServer {
+  getData() {}
+
+  postData() {}
+}
