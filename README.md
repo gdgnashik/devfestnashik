@@ -5,7 +5,9 @@ DevFest Application on Flutter
 ## Getting Started
 
 try to keep folder structure as
+
     [module_name]
+    
     ------------- /model
     
     ------------- /ui
